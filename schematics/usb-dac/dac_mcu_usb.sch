@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:usb-dac-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R R?
+L usb-dac-rescue:R-Device R?
 U 1 1 5B2D8668
 P 3650 2150
 F 0 "R?" V 3730 2150 50  0000 C CNN
@@ -25,7 +26,7 @@ F 3 "~" H 3650 2150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L usb-dac-rescue:R-Device R?
 U 1 1 5B2D86AD
 P 3650 2300
 F 0 "R?" V 3730 2300 50  0000 C CNN

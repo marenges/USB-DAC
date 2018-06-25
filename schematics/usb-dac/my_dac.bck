@@ -1,3 +1,20 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 74LVC1G00
+D Single NAND Gate, Low-Voltage CMOS
+K Single Gate NAND LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP GXO-7531-B
+D CMOS Clock Oscillator
+K Crystal Clock Oscillator
+F https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-8002DC
+$ENDCMP
+#
+$CMP VDD_+3V3
+D positive voltage power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
 #End Doc Library
