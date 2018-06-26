@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:usb-dac-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -30,6 +31,7 @@ S 3000 1050 1400 900
 U 5B28A8EC
 F0 "IN_OUT" 50
 F1 "dac_in_out.sch" 50
+F2 "PROG" I L 3000 1300 50 
 $EndSheet
 $Sheet
 S 4600 1000 1350 950 

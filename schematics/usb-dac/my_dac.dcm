@@ -1,3 +1,18 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP PGB1010603MR
+D ESD Suppressors / TVS Diodes 0603 24VDC .06pF
+K esd protection suppression transient
+$ENDCMP
+#
+$CMP VBUS
+D positive voltage power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VDD_+3V3
+D positive voltage power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
 #End Doc Library
