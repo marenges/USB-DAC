@@ -1,4 +1,4 @@
 (sym_lib_table
   (lib (name usb-dac-rescue)(type Legacy)(uri ${KIPRJMOD}/usb-dac-rescue.lib)(options "")(descr ""))
-  (lib (name my_dac)(type Legacy)(uri ${KICAD_USER_TEMPLATE_DIR}/my_dac.lib)(options "")(descr ""))
+  (lib (name my_dac)(type Legacy)(uri ${KIPRJMOD}/my_dac.lib)(options "")(descr ""))
 )

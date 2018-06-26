@@ -48,7 +48,7 @@ F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2950 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B31977F
 P 3950 1400
 F 0 "R?" V 4030 1400 50  0000 C CNN
@@ -59,7 +59,7 @@ F 3 "" H 3950 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B3197CE
 P 3950 1600
 F 0 "R?" V 4030 1600 50  0000 C CNN
@@ -70,7 +70,7 @@ F 3 "" H 3950 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B319BFE
 P 3950 2800
 F 0 "R?" V 4030 2800 50  0000 C CNN
@@ -81,7 +81,7 @@ F 3 "" H 3950 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B319C04
 P 3950 3000
 F 0 "R?" V 4030 3000 50  0000 C CNN
@@ -144,7 +144,7 @@ Wire Wire Line
 Text HLabel 1750 950  0    50   Input ~ 0
 MCLK_P48_N441
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B31A20E
 P 2100 950
 F 0 "R?" V 2180 950 50  0000 C CNN
@@ -217,7 +217,7 @@ F 3 "" H 4700 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B31B616
 P 5450 1400
 F 0 "R?" V 5530 1400 50  0000 C CNN
@@ -228,7 +228,7 @@ F 3 "" H 5450 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B31B64F
 P 5450 2800
 F 0 "R?" V 5530 2800 50  0000 C CNN
@@ -241,7 +241,7 @@ $EndComp
 Text HLabel 6050 1200 2    50   Output ~ 0
 PCM5102_MCLK
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B31B795
 P 6200 1400
 F 0 "R?" V 6280 1400 50  0000 C CNN
@@ -252,7 +252,7 @@ F 3 "" H 6200 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B31B7CB
 P 6750 1400
 F 0 "R?" V 6830 1400 50  0000 C CNN
@@ -263,7 +263,7 @@ F 3 "" H 6750 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B31B800
 P 7950 1700
 F 0 "R?" V 8030 1700 50  0000 C CNN
@@ -303,7 +303,7 @@ Wire Wire Line
 Text HLabel 10500 1150 0    50   Input ~ 0
 MCLK_MCU
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B31DFAA
 P 10350 1400
 F 0 "R?" V 10430 1400 50  0000 C CNN
@@ -314,7 +314,7 @@ F 3 "" H 10350 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B31DFFD
 P 10350 1900
 F 0 "R?" V 10430 1900 50  0000 C CNN
@@ -325,7 +325,7 @@ F 3 "" H 10350 1900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R?
+L usb-dac-rescue:R-device R?
 U 1 1 5B31E033
 P 10350 2100
 F 0 "R?" V 10430 2100 50  0000 C CNN

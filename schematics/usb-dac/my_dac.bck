@@ -1,5 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP PGB1010603MR
+D ESD Suppressors / TVS Diodes 0603 24VDC .06pF
+K esd protection suppression transient
+$ENDCMP
+#
+$CMP VBUS
+D positive voltage power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
 $CMP 74LVC1G00
 D Single NAND Gate, Low-Voltage CMOS
 K Single Gate NAND LVC CMOS
@@ -12,17 +22,12 @@ K Crystal Clock Oscillator
 F https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-8002DC
 $ENDCMP
 #
-$CMP PGB1010603MR
-D ESD Suppressors / TVS Diodes 0603 24VDC .06pF
-K esd protection suppression transient
-$ENDCMP
-#
-$CMP VBUS
+$CMP VDD_+3V3
 D positive voltage power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
-$CMP VDD_+3V3
+$CMP VDD_X02
 D positive voltage power-flag symbol
 K Power Flag Symbol
 $ENDCMP
