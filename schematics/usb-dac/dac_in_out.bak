@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:LED_Dual_ACA D?
+L usb-dac-rescue:LED_Dual_ACA-Device D?
 U 1 1 5B28ABFB
 P 1500 1150
 F 0 "D?" H 1500 1375 50  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "~" H 1500 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L usb-dac-rescue:R-Device R?
 U 1 1 5B28AC73
 P 2100 1050
 F 0 "R?" V 2180 1050 50  0000 C CNN
@@ -37,7 +37,7 @@ F 3 "~" H 2100 1050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L usb-dac-rescue:R-Device R?
 U 1 1 5B28ACAC
 P 2100 1250
 F 0 "R?" V 2180 1250 50  0000 C CNN
@@ -59,7 +59,7 @@ F 3 "" H 1100 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L usb-dac-rescue:R-Device R?
 U 1 1 5B28AECC
 P 2550 1250
 F 0 "R?" V 2630 1250 50  0000 C CNN
@@ -127,7 +127,7 @@ LED_FRONT_R
 Wire Wire Line
 	2800 1050 2250 1050
 $Comp
-L Analog_DAC:AK4430ET U?
+L usb-dac-rescue:AK4430ET-Analog_DAC U?
 U 1 1 5B28B76D
 P 4400 4650
 F 0 "U?" H 4150 5400 50  0000 L BNN
@@ -138,7 +138,7 @@ F 3 "" H 4400 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L usb-dac-rescue:R-Device R?
 U 1 1 5B28B8A3
 P 3350 5000
 F 0 "R?" V 3430 5000 50  0000 C CNN
@@ -149,7 +149,7 @@ F 3 "~" H 3350 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L usb-dac-rescue:R-Device R?
 U 1 1 5B28B946
 P 3350 4850
 F 0 "R?" V 3430 4850 50  0000 C CNN
@@ -160,7 +160,7 @@ F 3 "~" H 3350 4850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L usb-dac-rescue:R-Device R?
 U 1 1 5B28B968
 P 3350 4700
 F 0 "R?" V 3430 4700 50  0000 C CNN
@@ -171,7 +171,7 @@ F 3 "~" H 3350 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L usb-dac-rescue:R-Device R?
 U 1 1 5B28B990
 P 3350 4550
 F 0 "R?" V 3430 4550 50  0000 C CNN
@@ -236,7 +236,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 4550 3000 4550
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B28CDC6
 P 3300 4100
 F 0 "C?" H 3310 4170 50  0000 L CNN
@@ -247,7 +247,7 @@ F 3 "~" H 3300 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B28CDF9
 P 2850 4100
 F 0 "C?" H 2860 4170 50  0000 L CNN
@@ -291,7 +291,7 @@ F 3 "" H 5950 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B28DFE0
 P 5500 5450
 F 0 "C?" H 5510 5520 50  0000 L CNN
@@ -302,7 +302,7 @@ F 3 "~" H 5500 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L usb-dac-rescue:CP1_Small-Device C?
 U 1 1 5B28E09B
 P 5950 5450
 F 0 "C?" H 5960 5520 50  0000 L CNN
@@ -359,7 +359,7 @@ Connection ~ 3300 3900
 Wire Wire Line
 	3300 3900 2850 3900
 $Comp
-L Device:R R?
+L usb-dac-rescue:R-Device R?
 U 1 1 5B291F72
 P 6300 5150
 F 0 "R?" V 6380 5150 50  0000 C CNN
@@ -370,7 +370,7 @@ F 3 "~" H 6300 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L usb-dac-rescue:R-Device R?
 U 1 1 5B292023
 P 6300 5000
 F 0 "R?" V 6380 5000 50  0000 C CNN
@@ -385,7 +385,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 5150 5000 5150
 $Comp
-L Connector:Conn_Coaxial_x2 J?
+L usb-dac-rescue:Conn_Coaxial_x2-Connector J?
 U 1 1 5B293415
 P 8500 4550
 F 0 "J?" H 8500 4775 50  0000 C CNN
@@ -396,7 +396,7 @@ F 3 " ~" H 8500 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B29353A
 P 7100 5450
 F 0 "C?" H 7110 5520 50  0000 L CNN
@@ -407,7 +407,7 @@ F 3 "B32621A6222J" H 7100 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B2936CE
 P 7500 5450
 F 0 "C?" H 7510 5520 50  0000 L CNN
@@ -477,7 +477,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 4550 8800 4550
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B298857
 P 6350 2350
 F 0 "C?" H 6360 2420 50  0000 L CNN
@@ -488,7 +488,7 @@ F 3 "~" H 6350 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B29897E
 P 6350 3300
 F 0 "C?" H 6360 3370 50  0000 L CNN
@@ -499,7 +499,7 @@ F 3 "~" H 6350 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B2989C8
 P 6350 4250
 F 0 "C?" H 6360 4320 50  0000 L CNN
@@ -510,7 +510,7 @@ F 3 "~" H 6350 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B298A22
 P 6900 2350
 F 0 "C?" H 6910 2420 50  0000 L CNN
@@ -521,7 +521,7 @@ F 3 "~" H 6900 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B298AC8
 P 6900 3300
 F 0 "C?" H 6910 3370 50  0000 L CNN
@@ -532,7 +532,7 @@ F 3 "~" H 6900 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B298B14
 P 6900 4250
 F 0 "C?" H 6910 4320 50  0000 L CNN
@@ -543,7 +543,7 @@ F 3 "~" H 6900 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B298B7E
 P 7400 2350
 F 0 "C?" H 7410 2420 50  0000 L CNN
@@ -554,7 +554,7 @@ F 3 "PHE450MA5100JR17T0" H 7400 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B298C51
 P 7400 3300
 F 0 "C?" H 7410 3370 50  0000 L CNN
@@ -565,7 +565,7 @@ F 3 "PHE450MA5100JR17T0" H 7400 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L usb-dac-rescue:C_Small-Device C?
 U 1 1 5B298CA3
 P 7400 4250
 F 0 "C?" H 7410 4320 50  0000 L CNN
@@ -576,7 +576,7 @@ F 3 "PHE450MA5100JR17T0" H 7400 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L usb-dac-rescue:CP1_Small-Device C?
 U 1 1 5B298D0C
 P 7850 2350
 F 0 "C?" H 7860 2420 50  0000 L CNN
@@ -587,7 +587,7 @@ F 3 "~" H 7850 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L usb-dac-rescue:CP1_Small-Device C?
 U 1 1 5B298E00
 P 7850 3300
 F 0 "C?" H 7860 3370 50  0000 L CNN
@@ -598,7 +598,7 @@ F 3 "~" H 7850 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C?
+L usb-dac-rescue:CP1_Small-Device C?
 U 1 1 5B298E64
 P 7850 4250
 F 0 "C?" H 7860 4320 50  0000 L CNN

@@ -1,11 +1,137 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Analog_DAC:AK4430ET
+# Switch:SW_DIP_x02
 #
-DEF Analog_DAC:AK4430ET U 0 40 Y Y 1 F N
+DEF Switch:SW_DIP_x02 SW 0 0 Y N 1 F N
+F0 "SW" 0 250 50 H V C CNN
+F1 "Switch:SW_DIP_x02" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SW?DIP?x2*
+$ENDFPLIST
+DRAW
+C -80 0 20 0 0 0 N
+C -80 100 20 0 0 0 N
+C 80 0 20 0 0 0 N
+C 80 100 20 0 0 0 N
+S -150 200 150 -100 0 1 10 f
+P 2 0 0 0 -60 5 93 46 N
+P 2 0 0 0 -60 105 93 146 N
+X ~ 1 -300 100 200 R 50 50 1 1 P
+X ~ 2 -300 0 200 R 50 50 1 1 P
+X ~ 3 300 0 200 L 50 50 1 1 P
+X ~ 4 300 100 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# device:R
+#
+DEF device:R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "device:R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# my_dac:74LVC1G00
+#
+DEF my_dac:74LVC1G00 U 0 40 Y Y 1 F N
+F0 "U" -100 150 50 H V C CNN
+F1 "my_dac:74LVC1G00" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SOT*
+ SG-*
+$ENDFPLIST
+DRAW
+A 0 0 100 -899 899 0 1 10 N 0 -100 0 100
+P 4 0 1 10 0 -100 -150 -100 -150 100 0 100 N
+X ~ 1 -300 50 150 R 40 40 1 1 I
+X ~ 2 -300 -50 150 R 40 40 1 1 I
+X GND 3 0 -100 0 D 40 40 1 1 W N
+X ~ 4 250 0 150 L 40 40 1 1 O I
+X VCC 5 0 100 0 U 40 40 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# my_dac:GXO-7531-B
+#
+DEF my_dac:GXO-7531-B X 0 10 Y Y 1 F N
+F0 "X" -200 250 50 H V L CNN
+F1 "my_dac:GXO-7531-B" 50 -250 50 H V L CNN
+F2 "Oscillators:Oscillator_SMD_Golledge-GXO7531-4pin_7.0x5.0mm" 700 -350 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+$FPLIST
+ Oscillator*SMD*SeikoEpson*SG8002JA*14.0x8.7mm*
+$ENDFPLIST
+DRAW
+S -200 200 200 -200 0 1 10 f
+P 10 0 1 0 -50 -30 -40 -30 -40 30 -20 30 -20 -30 0 -30 0 30 20 30 20 -30 30 -30 N
+X OE 1 -300 0 100 R 50 50 1 1 I
+X GND 2 0 -300 100 U 50 50 1 1 W
+X OUT 3 300 0 100 L 50 50 1 1 O
+X V+ 4 0 300 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# my_dac:VDD_X02
+#
+DEF my_dac:VDD_X02 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "my_dac:VDD_X02" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VDD 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power:GND
+#
+DEF power:GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power:GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power:VCC
+#
+DEF power:VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power:VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# usb-dac-rescue:AK4430ET-Analog_DAC
+#
+DEF usb-dac-rescue:AK4430ET-Analog_DAC U 0 40 Y Y 1 F N
 F0 "U" -250 750 50 H V L BNN
-F1 "Analog_DAC:AK4430ET" -250 650 50 H V L BNN
+F1 "usb-dac-rescue:AK4430ET-Analog_DAC" -250 650 50 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -64,37 +190,6 @@ X TDI 9 500 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector:Conn_Coaxial_x2
-#
-DEF Connector:Conn_Coaxial_x2 J 0 40 Y N 1 F N
-F0 "J" 0 225 50 H V C CNN
-F1 "Connector:Conn_Coaxial_x2" 115 0 50 V V C CNN
-F2 "" 0 -100 50 H I C CNN
-F3 "" 0 -100 50 H I C CNN
-$FPLIST
- *BNC*
- *SMA*
- *SMB*
- *SMC*
- *Cinch*
-$ENDFPLIST
-DRAW
-A -2 -100 71 1636 0 0 1 10 N -70 -80 70 -100
-A -2 100 71 1636 0 0 1 10 N -70 120 70 100
-A -1 -100 71 0 -1638 0 1 10 N 70 -100 -70 -120
-A -1 100 71 0 -1638 0 1 10 N 70 100 -70 80
-C 0 -100 20 0 1 8 N
-C 0 100 20 0 1 8 N
-P 2 0 1 0 -100 -100 -20 -100 N
-P 2 0 1 0 -100 100 -20 100 N
-P 2 0 1 0 0 -200 0 -170 N
-P 2 0 1 0 0 30 0 -25 N
-X IN1 1 -200 100 100 R 50 50 1 1 P
-X IN2 2 -200 -100 100 R 50 50 1 1 P
-X EXT 3 0 -300 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector:USB_B
 #
 DEF Connector:USB_B J 0 40 Y Y 1 F N
@@ -128,11 +223,10 @@ X Shield 5 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:CP1_Small
 #
-DEF Device:CP1_Small C 0 10 N N 1 F N
+DEF usb-dac-rescue:CP1_Small-Device C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "Device:CP1_Small" 10 -80 50 H V L CNN
+F1 "usb-dac-rescue:CP1_Small-Device" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -148,11 +242,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C_Small
+# usb-dac-rescue:C_Small-Device
 #
-DEF Device:C_Small C 0 10 N N 1 F N
+DEF usb-dac-rescue:C_Small-Device C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "Device:C_Small" 10 -80 50 H V L CNN
+F1 "usb-dac-rescue:C_Small-Device" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -187,11 +281,41 @@ X ~ 2 0 -100 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:LED_Dual_ACA
 #
-DEF Device:LED_Dual_ACA D 0 0 Y N 1 F N
+DEF usb-dac-rescue:Conn_Coaxial_x2-Connector J 0 40 Y N 1 F N
+F0 "J" 0 225 50 H V C CNN
+F1 "usb-dac-rescue:Conn_Coaxial_x2-Connector" 115 0 50 V V C CNN
+F2 "" 0 -100 50 H I C CNN
+F3 "" 0 -100 50 H I C CNN
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A -2 -100 71 1636 0 0 1 10 N -70 -80 70 -100
+A -2 100 71 1636 0 0 1 10 N -70 120 70 100
+A -1 -100 71 0 -1638 0 1 10 N 70 -100 -70 -120
+A -1 100 71 0 -1638 0 1 10 N 70 100 -70 80
+C 0 -100 20 0 1 8 N
+C 0 100 20 0 1 8 N
+P 2 0 1 0 -100 -100 -20 -100 N
+P 2 0 1 0 -100 100 -20 100 N
+P 2 0 1 0 0 -200 0 -170 N
+P 2 0 1 0 0 30 0 -25 N
+X IN1 1 -200 100 100 R 50 50 1 1 P
+X IN2 2 -200 -100 100 R 50 50 1 1 P
+X EXT 3 0 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# usb-dac-rescue:LED_Dual_ACA-Device
+#
+DEF usb-dac-rescue:LED_Dual_ACA-Device D 0 0 Y N 1 F N
 F0 "D" 0 225 50 H V C CNN
-F1 "Device:LED_Dual_ACA" 0 -250 50 H V C CNN
+F1 "usb-dac-rescue:LED_Dual_ACA-Device" 0 -250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -218,11 +342,11 @@ X A2 3 300 -100 150 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# usb-dac-rescue:R-Device
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF usb-dac-rescue:R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "usb-dac-rescue:R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -235,28 +359,6 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Switch:SW_DIP_x02
-#
-DEF Switch:SW_DIP_x02 SW 0 0 Y N 1 F N
-F0 "SW" 0 250 50 H V C CNN
-F1 "Switch:SW_DIP_x02" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SW?DIP?x2*
-$ENDFPLIST
-DRAW
-C -80 0 20 0 0 0 N
-C -80 100 20 0 0 0 N
-C 80 0 20 0 0 0 N
-C 80 100 20 0 0 0 N
-S -150 200 150 -100 0 1 10 f
-P 2 0 0 0 -60 5 93 46 N
-P 2 0 0 0 -60 105 93 146 N
-X ~ 1 -300 100 200 R 50 50 1 1 P
-X ~ 2 -300 0 200 R 50 50 1 1 P
-X ~ 3 300 0 200 L 50 50 1 1 P
-X ~ 4 300 100 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -447,34 +549,4 @@ DRAW
 C 0 75 25 0 1 0 N
 P 2 0 1 0 0 0 0 50 N
 X VDD 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power:GND
-#
-DEF power:GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power:VCC
-#
-DEF power:VCC #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:VCC" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 0 75 25 0 1 0 N
-P 2 0 1 0 0 0 0 50 N
-X VCC 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
 #End Library
